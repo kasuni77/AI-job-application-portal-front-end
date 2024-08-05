@@ -1,0 +1,116 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+
+    --gradient: linear-gradient(to top left,#2e7baf,#2c3e50);
+
+    --background: 216 41.6% 3.52%;
+    --foreground: 216 6.4% 97.2%;
+
+    /* --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%; */
+
+    --muted: 216 32% 13.2%;
+    --muted-foreground: 216 6.4% 54.4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    /* --card: linear-gradient(to top left,#0F2027,#203A43,#2C5364); */
+    --card: linear-gradient(to top left,#141E30,#243B55);
+    --card-foreground: #ffffff;
+
+    --border: 216 32% 13.2%;
+    --input: 216 32% 13.2%;
+
+    --primary: 216 64% 44%;
+    --primary-foreground: 216 6.4% 97.2%;
+
+    --secondary: 216 32% 13.2%;
+    --secondary-foreground: 216 6.4% 97.2%;
+
+    --accent: 216 32% 13.2%;
+    --accent-foreground: 216 6.4% 97.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 216 6.4% 97.2%;
+
+    --ring: 216 64% 44%;
+    --radius: 0.5rem;
+
+    }
+  }  
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+    h1 {
+      @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+    }
+    h2 {
+      @apply scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
+    }
+    h3 {
+      @apply scroll-m-20 text-xl font-medium  tracking-tight;
+    }
+    p {
+      @apply leading-7 [&:not(:first-child)]:mt-6;
+    }
+  
+    .text-underlay-1 {
+      background: linear-gradient(98deg, #d9ff00 -9.47%, #00a49d 65.47%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero {
+      background: url("/assets/home/hero.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .card-custom {
+      background: var(--card);
+      color: var(--card-foreground);
+      @apply p-4 rounded-lg shadow-lg;
+    }
+  
+    .card-title-custom {
+      color: var(--card-foreground);
+      @apply text-lg font-bold;
+    }
+
+    /* .admin {
+      background: url("/assets/home/jobhunt.png");
+      background-position: center;
+      height: 700px;
+      width: 720px;
+      padding-top: 50px;
+      margin-top: 40px;
+    } */
+
+    .admin {
+      position: relative;
+      background: url("/assets/home/test3.jpg") center center / cover no-repeat;
+      height: 30vh;
+     
+    }
+    
+    .overlay {
+      /* position: absolute; */
+      width: 90%;
+      height: 30%;
+      /* background: rgba(0, 0, 0, 0.5);  */
+      pointer-events: none; 
+      background-position: center;
+      background-size: cover;
+    }
+    
+  }
