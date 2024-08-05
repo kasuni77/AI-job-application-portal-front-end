@@ -1,7 +1,7 @@
 // export const getJobApllicationsForJob = async (id) => {
 //   const token = await window.Clerk.session.getToken();
 
-//   const res = await fetch(`http://localhost:8000/jobApplications?jobid=${id}`, {
+//   const res = await fetch(`https://ai-job-application-back-end-production.up.railway.app/jobApplications?jobid=${id}`, {
 //     method: "GET",
 //     headers: {
 //       Authorization: `Bearer ${token}`,
@@ -20,7 +20,7 @@ export const getJobApllicationsForJob = async (id) => {
   try {
     const token = await window.Clerk.session.getToken();
     console.log('Token:', token);
-    const res = await fetch(`http://localhost:8000/jobApplications?jobid=${id}`, {
+    const res = await fetch(`https://ai-job-application-back-end-production.up.railway.app/jobApplications?jobid=${id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -51,7 +51,7 @@ export const getJobApllicationsForJob = async (id) => {
 // export const getJobApplicationById = async (id) => {
 //   const token = await window.Clerk.session.getToken();
 
-//   const res = await fetch(`http://localhost:8000/jobApplications/${id}`, {
+//   const res = await fetch(`https://ai-job-application-back-end-production.up.railway.app/jobApplications/${id}`, {
 //     method: "GET",
 //     headers: {
 //       Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ export const getJobApplicationById = async (id) => {
   try {
     const token = await window.Clerk.session.getToken();
 
-    const res = await fetch(`http://localhost:8000/jobApplications/${id}`, {
+    const res = await fetch(`https://ai-job-application-back-end-production.up.railway.app/jobApplications/${id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -96,7 +96,7 @@ export const createJobApplication = async ({
   
   const token = await window.Clerk.session.getToken();
 
-  await fetch("http://localhost:8000/jobApplications", {
+  await fetch("https://ai-job-application-back-end-production.up.railway.app/jobApplications", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const deleteJobApplication = async (id) => {
   const token = await window.Clerk.session.getToken();
 
   const res = await fetch(
-    `http://localhost:8000/jobApplications/${id}`,
+    `https://ai-job-application-back-end-production.up.railway.app/jobApplications/${id}`,
     {
       method: "DELETE",
       headers: {
