@@ -10,12 +10,9 @@ function Footer() {
       <br />
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:justify-between items-center">
-          {/* Logo */}
           <div className="flex justify-center mb-4 md:mb-0">
             <img src={logo} alt="Hirely AI Logo" className="h-24" />
           </div>
-          
-          {/* Social Icons */}
           <div className="flex justify-center space-x-4 mb-4 md:mb-0">
             <SocialIcon
               url="https://github.com/kasuni77"
