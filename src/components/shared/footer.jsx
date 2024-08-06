@@ -25,11 +25,13 @@ function Footer() {
             <SocialIcon
               url="https://www.facebook.com"
               style={{ height: 30, width: 30 }}
+              className="pointer-events-none"
             />
             <SocialIcon
               network="instagram"
               url="https://www.instagram.com/"
               style={{ height: 30, width: 30 }}
+              className="pointer-events-none"
             />
           </div>
          
