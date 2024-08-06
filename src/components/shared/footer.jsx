@@ -5,34 +5,40 @@ import logo from "../../../public/assets/home/logo.png";
 
 function Footer() {
   return (
-    <div className="py-10 footer">
+    <div className="py-10">
       <Separator />
       <br />
-      <div className="flex items-center justify-between px-20">
-        <div className="flex items-center space-x-4">
-          <img src={logo} alt="Hirely AI Logo" className="h-24" />
-        </div>
-        <div className="flex-1 flex justify-center space-x-4">
-          <SocialIcon
-            url="https://github.com/kasuni77"
-            style={{ height: 30, width: 30 }}
-          />
-          <SocialIcon
-            url="https://x.com/kazu_________77?s=21"
-            style={{ height: 30, width: 30 }}
-          />
-          <SocialIcon
-            url="https://www.facebook.com"
-            style={{ height: 30, width: 30 }}
-          />
-          <SocialIcon
-            network="instagram"
-            url="https://www.instagram.com/"
-            style={{ height: 30, width: 30 }}
-          />
-        </div>
-        <div className="text-right">
-          <h4>&copy; 2024 HirelyAI | Kasuni Madhushika</h4>
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row md:justify-between items-center">
+          {/* Logo */}
+          <div className="flex justify-center mb-4 md:mb-0">
+            <img src={logo} alt="Hirely AI Logo" className="h-24" />
+          </div>
+          
+          {/* Social Icons */}
+          <div className="flex justify-center space-x-4 mb-4 md:mb-0">
+            <SocialIcon
+              url="https://github.com/kasuni77"
+              style={{ height: 30, width: 30 }}
+            />
+            <SocialIcon
+              url="https://x.com/kazu_________77?s=21"
+              style={{ height: 30, width: 30 }}
+            />
+            <SocialIcon
+              url="https://www.facebook.com"
+              style={{ height: 30, width: 30 }}
+            />
+            <SocialIcon
+              network="instagram"
+              url="https://www.instagram.com/"
+              style={{ height: 30, width: 30 }}
+            />
+          </div>
+         
+          <div className="text-center md:text-right">
+            <h4>&copy; 2024 HirelyAI | Kasuni Madhushika</h4>
+          </div>
         </div>
       </div>
     </div>
