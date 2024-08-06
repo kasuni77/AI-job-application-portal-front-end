@@ -12,6 +12,9 @@ function Footer() {
         <div className="flex flex-col md:flex-row md:justify-between items-center">
           <div className="flex justify-center mb-4 md:mb-0">
             <img src={logo} alt="Hirely AI Logo" className="h-24" />
+            <p className="text-2xl px-5 font-medium text-underlay-1 hidden md:inline">
+             HirelyAI
+           </p>
           </div>
           <div className="flex justify-center space-x-4 mb-4 md:mb-0">
             <SocialIcon
