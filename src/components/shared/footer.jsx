@@ -1,17 +1,18 @@
 import { Separator } from "@/components/ui/separator";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import logo from "../../../public/assets/home/logo.png";
 
 function Footer() {
   return (
-    <div className="py-10">
+    <div className="py-10 footer">
       <Separator />
       <br />
-      <div className="py-3 justify-between flex">
-        <h4 className="">@Kasuni Madhushika</h4>
-      </div>
-      <div>
-        <div className="flex space-x-4">
+      <div className="flex items-center justify-between px-20">
+        <div className="flex items-center space-x-4">
+          <img src={logo} alt="Hirely AI Logo" className="h-24" />
+        </div>
+        <div className="flex-1 flex justify-center space-x-4">
           <SocialIcon
             url="https://github.com/kasuni77"
             style={{ height: 30, width: 30 }}
@@ -29,7 +30,9 @@ function Footer() {
             url="https://www.instagram.com/"
             style={{ height: 30, width: 30 }}
           />
-
+        </div>
+        <div className="text-right">
+          <h4>&copy; 2024 HirelyAI | Kasuni Madhushika</h4>
         </div>
       </div>
     </div>

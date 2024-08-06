@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
+import Footer from "@/components/shared/footer";
 
 function AdminMainLayout() {
   const { user, isLoaded, isSignedIn } = useUser();
@@ -33,6 +34,8 @@ function AdminMainLayout() {
       <div className="overlay"></div>
       </div>
       <Outlet />
+      <br /><br /><br />
+      <Footer />
     </div>
   );
 }

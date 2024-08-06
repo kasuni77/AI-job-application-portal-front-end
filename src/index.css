@@ -98,7 +98,7 @@
 
     .admin {
       position: relative;
-      background: url("/assets/home/test3.jpg") center center / cover no-repeat;
+      background: url("/assets/home/test4.png") center center / cover no-repeat;
       height: 30vh;
      
     }
@@ -112,5 +112,6 @@
       background-position: center;
       background-size: cover;
     }
-    
+
+
   }

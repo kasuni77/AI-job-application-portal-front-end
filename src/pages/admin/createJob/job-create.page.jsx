@@ -3,9 +3,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { createJob } from "@/lib/services/api/jobs";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { useToast } from "@/components/ui/use-toast"
 
 function AdminJobCreatePage() {
   const [formData, setFormData] = useState({

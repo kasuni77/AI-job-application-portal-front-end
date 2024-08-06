@@ -7,6 +7,7 @@ import { useUser } from "@clerk/clerk-react";
 import { Briefcase, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
+import Footer from "@/components/shared/footer";
 
 const getJob = async (id) => {
   const token = await window.Clerk.session.getToken();
@@ -169,6 +170,7 @@ function JobPage() {
           </Button>
         </div>
       </form>
+      <Footer />
     </div>
   );
 }
